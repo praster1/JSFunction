@@ -1,1 +1,6 @@
 exportPattern("^[[:alpha:]]+")
+import(compiler)
+import(parallel)
+import(RColorBrewer)
+import(pbapply)
+import(pbmcapply)
