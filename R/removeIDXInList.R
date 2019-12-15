@@ -1,5 +1,3 @@
-require(compiler)
-
 ##### inputList에서 removeIDX 인덱스의 리스트 삭제
 removeIDXInList = function(inputList, removeIDX)
 {

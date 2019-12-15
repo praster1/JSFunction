@@ -1,6 +1,3 @@
-require(compiler)
-require(parallel)
-
 mcsapply = function (X, FUN, ..., simplify = TRUE, USE.NAMES = TRUE) 
 {
 	FUN <- match.fun(FUN)

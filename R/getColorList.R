@@ -1,6 +1,3 @@
-require(compiler)
-require(RColorBrewer)
-
 ### Color List
 getColorList = function(n = NULL)
 {
