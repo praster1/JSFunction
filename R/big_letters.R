@@ -1,3 +1,6 @@
+require(compiler)
+require(pbapply)
+
 big_letters = function(len) 
 {
 	res = list(); counter = 0

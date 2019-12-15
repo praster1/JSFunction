@@ -1,6 +1,7 @@
-### Color List
 require(compiler)
+require(RColorBrewer)
 
+### Color List
 getColorList = function(n = NULL)
 {
 	colorNames = rownames(brewer.pal.info)
