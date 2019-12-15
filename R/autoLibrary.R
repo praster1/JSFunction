@@ -1,3 +1,5 @@
+require(compiler)
+
 autoLibrary = function(libraryName)
 {
 	if(!(require(libraryName)))
