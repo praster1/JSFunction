@@ -1,5 +1,3 @@
-require(compiler)
-
 mcsapply = function (X, FUN, ..., simplify = TRUE, USE.NAMES = TRUE) 
 {
 	FUN <- match.fun(FUN)
@@ -10,5 +8,5 @@ mcsapply = function (X, FUN, ..., simplify = TRUE, USE.NAMES = TRUE)
 		simplify2array(answer, higher = (simplify == "array"))
 	else answer
 }
-mcsapply = cmpfun(mcsapply)
 
+mcsapply = cmpfun(mcsapply)

@@ -1,5 +1,3 @@
-require(compiler)
-
 big_letters = function(len) 
 {
 	res = list(); counter = 0
@@ -9,4 +7,5 @@ big_letters = function(len)
 	res = unlist(pblapply(1:ceiling(len/26), loopFunc))
 	return(res[1:len])
 }
+
 big_letters = cmpfun(big_letters)
