@@ -1,6 +1,6 @@
 autoLibrary = function(libraryName)
 {
-	if(!(require(libraryName)) 
+	if(!(require(libraryName))
 	{
 		install.packages(libraryName)	
 	}
