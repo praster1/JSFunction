@@ -3,7 +3,6 @@ require(compiler)
 
 getColorList = function(n = NULL)
 {
-	require(RColorBrewer)
 	colorNames = rownames(brewer.pal.info)
 	findColorList = function(i)	{	return(brewer.pal(n=8, name=colorNames[i]))	}
 	matColorList = list_to_matrix(lapply(1:length(colorNames), findColorList), colNum=8)

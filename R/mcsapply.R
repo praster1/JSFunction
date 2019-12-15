@@ -2,7 +2,6 @@ require(compiler)
 
 mcsapply = function (X, FUN, ..., simplify = TRUE, USE.NAMES = TRUE) 
 {
-	require(parallel)
 	FUN <- match.fun(FUN)
 	answer <- mclapply(X = X, FUN = FUN, ...)
 	if (USE.NAMES && is.character(X) && is.null(names(answer))) 
