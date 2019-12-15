@@ -16,4 +16,4 @@ getColorList = function(n = NULL)
 	return(resColorList[1:n])
 }
 
-big_letters = cmpfun(big_letters)
+getColorList = cmpfun(getColorList)
