@@ -1,3 +1,5 @@
+require(compiler)
+
 mcsapply = function (X, FUN, ..., simplify = TRUE, USE.NAMES = TRUE) 
 {
 	require(parallel)
@@ -9,4 +11,5 @@ mcsapply = function (X, FUN, ..., simplify = TRUE, USE.NAMES = TRUE)
 		simplify2array(answer, higher = (simplify == "array"))
 	else answer
 }
+mcsapply = cmpfun(mcsapply)
 

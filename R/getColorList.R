@@ -1,4 +1,6 @@
 ### Color List
+require(compiler)
+
 getColorList = function(n = NULL)
 {
 	require(RColorBrewer)
@@ -16,3 +18,4 @@ getColorList = function(n = NULL)
 	
 	return(resColorList[1:n])
 }
+big_letters = cmpfun(big_letters)
