@@ -27,7 +27,7 @@ getWeeksIDX = function(inputData)
 	}
 
 	res = as_tibble(data.table(yearDateTable, weeksIDX = weeksIDX))
-	res = left_join(res, res[weeks=="Saturday", c(3,1)], by="weeksIDX")
+	res = left_join(res, res[res$weeks=="Saturday", c(3,1)], by="weeksIDX")
 	res = data.table(YearDates = res$YearDates.x, weeks = res$weeks, lastDayOfWeeks = res$YearDates.y)
 
 	return(res)
